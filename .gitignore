@@ -4,3 +4,4 @@ ios/Pods/
 .idea/
 *.iml
 build/
+dist
