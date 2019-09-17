@@ -46,13 +46,13 @@ extension CameraController {
                     self.frontCamera = camera
                 }
                 
-                if camera.position == .back {
-                    self.rearCamera = camera
+                // if camera.position == .back {
+                //     self.rearCamera = camera
                     
-                    try camera.lockForConfiguration()
-                    camera.focusMode = .continuousAutoFocus
-                    camera.unlockForConfiguration()
-                }
+                //     try camera.lockForConfiguration()
+                //     camera.focusMode = .continuousAutoFocus
+                //     camera.unlockForConfiguration()
+                // }
             }
         }
         
