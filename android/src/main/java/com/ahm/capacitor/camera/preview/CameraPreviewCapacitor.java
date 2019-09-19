@@ -31,10 +31,10 @@ import java.util.List;
                 Manifest.permission.READ_EXTERNAL_STORAGE
         },
         requestCodes = {
-                CameraPreview.REQUEST_CAMERA_PERMISSION
+                CameraPreviewCapacitor.REQUEST_CAMERA_PERMISSION
         }
 )
-public class CameraPreview extends Plugin implements CameraActivity.CameraPreviewListener {
+public class CameraPreviewCapacitor extends Plugin implements CameraActivity.CameraPreviewListener {
 
     static final int REQUEST_CAMERA_PERMISSION = 1234;
 

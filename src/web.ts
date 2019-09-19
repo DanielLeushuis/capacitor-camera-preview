@@ -4,7 +4,7 @@ import { CameraPreviewPlugin } from "./definitions";
 export class CameraPreviewWeb extends WebPlugin implements CameraPreviewPlugin {
   constructor() {
     super({
-      name: "CameraPreview",
+      name: "CameraPreviewCapacitor",
       platforms: ["web"]
     });
   }
@@ -84,9 +84,9 @@ export class CameraPreviewWeb extends WebPlugin implements CameraPreviewPlugin {
   }
 }
 
-const CameraPreview = new CameraPreviewWeb();
+const CameraPreviewCapacitor = new CameraPreviewWeb();
 
-export { CameraPreview };
+export { CameraPreviewCapacitor };
 
 import { registerWebPlugin } from "@capacitor/core";
-registerWebPlugin(CameraPreview);
+registerWebPlugin(CameraPreviewCapacitor);

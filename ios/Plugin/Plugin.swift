@@ -5,8 +5,8 @@ import AVFoundation
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitor.ionicframework.com/docs/plugins/ios
  */
-@objc(CameraPreview)
-public class CameraPreview: CAPPlugin {
+@objc(CameraPreviewCapacitor)
+public class CameraPreviewCapacitor: CAPPlugin {
 
     var previewView:UIView!
     let cameraController = CameraController()

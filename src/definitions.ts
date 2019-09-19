@@ -1,6 +1,6 @@
 declare module "@capacitor/core" {
   interface PluginRegistry {
-    CameraPreview: CameraPreviewPlugin;
+    CameraPreviewCapacitor: CameraPreviewPlugin;
   }
 }
 

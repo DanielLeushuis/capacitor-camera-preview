@@ -96,9 +96,9 @@ All options stated are optional and will default to values here
 ```javascript
 import { Plugins } from "@capacitor/core"
 
-const { CameraPreview } = Plugins
+const { CameraPreviewCapacitor } = Plugins
 
-CameraPreview.start();
+CameraPreviewCapacitor.start();
 ```
 
 Remember to add the style below on your app's HTML or body element:
@@ -114,7 +114,7 @@ html, body, .ion-app, .ion-content {
 <info>Stops the camera preview instance.</info><br/>
 
 ```javascript
-CameraPreview.stop();
+CameraPreviewCapacitor.stop();
 ```
 
 <!-- ### switchCamera([successCallback, errorCallback])
@@ -146,7 +146,7 @@ CameraPreview.hide();
 <!-- <info>Take the picture. If width and height are not specified or are 0 it will use the defaults. If width and height are specified, it will choose a supported photo size that is closest to width and height specified and has closest aspect ratio to the preview. The argument `quality` defaults to `85` and specifies the quality/compression value: `0=max compression`, `100=max quality`.</info><br/> -->
 
 ```javascript
-const result = await CameraPreview.capture();
+const result = await CameraPreviewCapacitor.capture();
 const base64PictureData = result.value;
 
 // do sometime with base64PictureData
